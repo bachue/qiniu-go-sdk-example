@@ -30,7 +30,7 @@ func main() {
 		IoHosts: opts.IoHosts,
 		Tries:   opts.Tries,
 	})
-	outputFile, err := os.OpenFile(opts.OutputFilePath, os.O_CREATE|os.O_WRONLY|os.O_TRUNC, 0600)
+	outputFile, err := os.OpenFile(opts.OutputFilePath, os.O_CREATE|os.O_WRONLY, 0600)
 	if err != nil {
 		panic(err)
 	}
